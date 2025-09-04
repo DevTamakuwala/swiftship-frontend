@@ -118,7 +118,7 @@ export default function Header() {
         </li>
 
             <li className="nav-item">
-              <a
+              <Link
                 href="/track"
                 className={`nav-link px-3 py-2 ${
                   activeSection === 'track' ? 'active-link' : ''
@@ -126,7 +126,7 @@ export default function Header() {
                 onClick={() => setIsOpen(false)}
               >
                 Track
-              </a>
+              </Link>
             </li>
             {/* <li className="nav-item">
               <a

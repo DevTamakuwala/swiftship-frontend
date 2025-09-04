@@ -46,7 +46,7 @@ export default function SuratCargo() {
           <div className="row">
             <div className="col-md-6">
               <p className="lead">
-                Quora Cargo is Surat's leading logistics partner, specializing in diamond, textile, 
+                Quora Cargo is Surat&apos;s leading logistics partner, specializing in diamond, textile, 
                 and e-commerce cargo services. With our strategically located warehouse in Varachha, 
                 we offer same-day delivery across Surat and express shipping throughout Gujarat.
               </p>
@@ -78,7 +78,7 @@ export default function SuratCargo() {
                   <div className="card-body">
                     <h3 className="h5 mb-3">{feature}</h3>
                     <p className="card-text">
-                      Experience reliable and efficient cargo services tailored for Surat's businesses.
+                      Experience reliable and efficient cargo services tailored for Surat&apos;s businesses.
                     </p>
                   </div>
                 </div>

@@ -4,7 +4,13 @@ import axios from 'axios';
 
 export default function FranchiseDashboard() {
   const [shipments, setShipments] = useState([]);
-  const franchiseId = localStorage.getItem('franchiseId'); // Ensure it's stored at login
+  const [franchiseId, setFranchiseId] = useState(null);
+
+  useEffect(() => {
+    // Only access localStorage in the browser
+    const id = typeof window !== 'undefined' ? localStorage.getItem('franchiseId') : null;
+    setFranchiseId(id);
+  }, []);
 
   useEffect(() => {
     if (franchiseId) {

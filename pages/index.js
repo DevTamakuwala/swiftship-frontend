@@ -862,7 +862,13 @@ export default function Home() {
               
               <div className="col-lg-6" data-aos="fade-left">
                 <div className="position-relative">
-                  <img className="img-fluid rounded-4 shadow" src="img/feature.jpg" alt="Features" />
+                  <Image 
+                    className="img-fluid rounded-4 shadow" 
+                    src="/img/feature.jpg" 
+                    alt="Features"
+                    width={600}
+                    height={400}
+                  />
                 </div>
               </div>
             </div>
@@ -1000,7 +1006,14 @@ export default function Home() {
                 <div key={idx} className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay={idx * 100}>
                   <div className="service-card text-center">
                     <div className="mb-4">
-                      <img className="img-fluid rounded-circle mb-3" src={member.img} alt={member.name} style={{ width: '100px', height: '100px', objectFit: 'cover' }} />
+                      <Image 
+                        className="img-fluid rounded-circle mb-3" 
+                        src={member.img} 
+                        alt={member.name} 
+                        width={100}
+                        height={100}
+                        style={{ objectFit: 'cover' }}
+                      />
                       <h5 className="fw-bold mb-1" style={{ color: theme.navy }}>{member.name}</h5>
                       <p className="mb-3" style={{ color: theme.primary }}>{member.role}</p>
                       <div className="d-flex justify-content-center gap-2">
@@ -1039,11 +1052,13 @@ export default function Home() {
                 <div key={idx} className="col-lg-6" data-aos="fade-up" data-aos-delay={idx * 100}>
                   <div className="service-card">
                     <div className="d-flex align-items-center mb-3">
-                      <img 
+                      <Image 
                         className="rounded-circle me-3" 
-                        src={`img/testimonial-${idx + 1}.jpg`} 
+                        src={`/img/testimonial-${idx + 1}.jpg`} 
                         alt={testimonial.name}
-                        style={{ width: '50px', height: '50px', objectFit: 'cover' }}
+                        width={50}
+                        height={50}
+                        style={{ objectFit: 'cover' }}
                       />
                       <div>
                         <h6 className="fw-bold mb-1" style={{ color: theme.navy }}>{testimonial.name}</h6>
@@ -1070,7 +1085,7 @@ export default function Home() {
           <div className="container">
             <div className="text-center mb-5" data-aos="zoom-in">
               <h2 className="section-title display-4">Contact Us</h2>
-              <p className="section-subtitle">We're here to help with all your shipping needs</p>
+              <p className="section-subtitle">We&apos;re here to help with all your shipping needs</p>
             </div>
             
             <div className="row g-5 align-items-center">
